@@ -13,7 +13,7 @@ start()
 	echo "----------------------------------------"
 	echo "----------------------------------------"
 	pwd
-	ll
+	ls
 	echo "Create File ConnectionParameters.docker"
 	echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?><IntegrationNodeConnectionParameters Version=\"10.0.0\" host=\"$INPUT_REMOTE_IP\" integrationNodeName=\"$INPUT_REMOTE_NODE_NAME\" listenerPort=\"$INPUT_REMOTE_PORT\" sslIncludeProtocols=\"SSL_TLSv2\" sslTrustStorePath=\"$INPUT_REMOTE_SSL_TRUST_STORE_PATH\" useSsl=\"$INPUT_REMOTE_USE_SSL\" userName=\"$INPUT_REMOTE_USER\" password=\"$INPUT_REMOTE_PASSWORD\" xmlns=\"http://www.ibm.com/xmlns/prod/websphere/iib/8/IntegrationNodeConnectionParameters\"/>" > /tmp/deploy/ConnectionParameters.docker
 	echo "----------------------------------------"
